@@ -1,0 +1,44 @@
+body{
+    background-color: #CCFFC5;
+}
+
+.elemento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'inter', sans-serif;
+}
+
+ul{
+    margin-top: -15px;
+    margin-bottom: -15px;
+    margin-left: -60px;
+}
+
+li{
+    font-size: 16px;
+}
+
+p{
+    margin-left: -174px;
+    margin-bottom: 3px;
+}
+
+input{
+    width: 350px;
+    height: 60px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    background-color: #3AE3A8;
+    font-size: 24px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+
