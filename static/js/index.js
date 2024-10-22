@@ -3,19 +3,20 @@ let n = getRandom();
 let inputElem = document.querySelector("#guess")
 let indizio = document.querySelector('#indizio')
 let button = document.querySelector('#guessbtn')
+let testoTentativi = document.querySelector("#tentativi")
 function getRandom(max = 100) {
     return Math.floor(Math.random() * max);
 }
 
 function gestisciClick() {
-        if (tentativi <= 5) {
+        if (tentativi <= 5 && tentativi > 0) {
             numeroInserito = inputElem.value;
             if (isNaN(numeroInserito)) {
                 return
             }
     
             if (numeroInserito == n) {
-                console.log("Bravo, hai vinto.");
+                indizio.innerHTML = "bravo hai vinto "
                 return;
             } else if (numeroInserito < n) {
                 indizio.innerHTML = "il numero inserito e troppo basso "
@@ -23,11 +24,11 @@ function gestisciClick() {
                 indizio.innerHTML = "il numero inserito e troppo alto "
             }
             tentativi --
-            console.log(tentativi)
+            testoTentativi.innerHTML = "tentativi rimasti :" + tentativi
     }   
         
     if (tentativi === 0 && numeroInserito != n) {
-        alert("Hai perso. Il numero da indovinare era: " + n);
+        indizio.innerHTML = "Hai perso. Il numero da indovinare era: " + n;
     }
 
 }
