@@ -16,12 +16,12 @@ function gestisciClick() {
             }
     
             if (numeroInserito == n) {
-                indizio.innerHTML = "bravo hai vinto "
+                indizio.innerHTML = "bravo hai vinto! "
                 return;
             } else if (numeroInserito < n) {
-                indizio.innerHTML = "il numero inserito e troppo basso "
+                indizio.innerHTML = "numero troppo basso! "
             } else {
-                indizio.innerHTML = "il numero inserito e troppo alto "
+                indizio.innerHTML = "numero troppo alto! "
             }
             tentativi --
             testoTentativi.innerHTML = "tentativi rimasti :" + tentativi
